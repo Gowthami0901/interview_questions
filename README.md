@@ -1,10 +1,8 @@
 
-## If-Else Statements
+# If-Else Statements
 
-#### **Q1: What is an if-else statement? Explain its syntax in Python.**
-
-**A:**  
-An if-else statement allows a program to execute certain code blocks based on whether a condition is `True` or `False`. 
+1. **What is an if-else statement? Explain its syntax in Python.** 
+- An if-else statement allows a program to execute certain code blocks based on whether a condition is `True` or `False`. 
 
 **Syntax in Python:**
 ```python
