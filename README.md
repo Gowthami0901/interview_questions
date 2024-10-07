@@ -1,8 +1,8 @@
 # **CONTROL FLOW**
 
-[If-Else Statements](#If-Else-Statements)
-[While and For Loops](#While-and-For_Loops)
-[Break Continue Pass Statements](#Break-Continue-Pass-Statements)
+- [If-Else Statements](#If-Else-Statements)
+- [While and For Loops](#While-and-For_Loops)
+- [Break Continue Pass Statements](#Break-Continue-Pass-Statements)
 
 # If-Else-Statements
 
