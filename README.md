@@ -1,8 +1,8 @@
 # **CONTROL FLOW**
 
-- [If-Else Statements](#If-Else-Statements)
-- [While and For Loops](#While-and-For_Loops)
-- [Break Continue Pass Statements](#Break-Continue-Pass-Statements)
+[If-Else Statements](#If-Else-Statements)
+[While and For Loops](#While-and-For_Loops)
+[Break Continue Pass Statements](#Break-Continue-Pass-Statements)
 
 # If-Else-Statements
 
@@ -156,6 +156,324 @@ if True or check():
 ---
 <br>
 
+# Coding Question
+
+1. **Check Divisibility by Multiple Numbers**
+
+**Question:**  
+Write a Python program that takes an integer as input and checks if it is divisible by both 3 and 5, only by 3, only by 5, or by neither.
+
+**Solution:**
+```python
+def check_divisibility(n):
+    if n % 3 == 0 and n % 5 == 0:
+        return "Divisible by both 3 and 5"
+    elif n % 3 == 0:
+        return "Divisible by 3"
+    elif n % 5 == 0:
+        return "Divisible by 5"
+    else:
+        return "Not divisible by 3 or 5"
+
+# Example Usage
+print(check_divisibility(15))  # Output: Divisible by both 3 and 5
+print(check_divisibility(9))   # Output: Divisible by 3
+print(check_divisibility(10))  # Output: Divisible by 5
+print(check_divisibility(7))   # Output: Not divisible by 3 or 5
+```
+
+---
+
+2. **Simple Calculator**
+
+**Question:**  
+Write a Python program that functions as a simple calculator. It should take two numbers and an operator (`+`, `-`, `*`, `/`) as input and perform the corresponding arithmetic operation.
+
+**Solution:**
+```python
+def simple_calculator(a, b, operator):
+    if operator == '+':
+        return a + b
+    elif operator == '-':
+        return a - b
+    elif operator == '*':
+        return a * b
+    elif operator == '/':
+        if b == 0:
+            return "Error: Division by zero"
+        return a / b
+    else:
+        return "Invalid operator"
+
+# Example Usage
+print(simple_calculator(10, 5, '+'))  # Output: 15
+print(simple_calculator(10, 5, '-'))  # Output: 5
+print(simple_calculator(10, 5, '*'))  # Output: 50
+print(simple_calculator(10, 0, '/'))  # Output: Error: Division by zero
+print(simple_calculator(10, 5, '^'))  # Output: Invalid operator
+```
+
+---
+
+3. **Check for Prime Number**
+
+**Question:** Write a program that checks if a number is prime.
+
+**Answer:**
+```python
+def is_prime(n):
+    if n <= 1:
+        return False
+    for i in range(2, int(n**0.5) + 1):
+        if n % i == 0:
+            return False
+    return True
+
+# Example usage
+print(is_prime(29))  # Output: True
+print(is_prime(30))  # Output: False
+```
+
+---
+
+4. **Check if a Number is Even or Odd**
+**Question:** Write a program to determine if a number is even or odd.
+
+**Answer:**
+```python
+def check_even_odd(num):
+    if num % 2 == 0:
+        return "Even"
+    else:
+        return "Odd"
+
+# Example usage
+print(check_even_odd(10))  # Output: Even
+print(check_even_odd(5))   # Output: Odd
+```
+
+---
+
+5. **Check for Vowel or Consonant**
+**Question:** Write a program that checks if a character is a vowel or consonant.
+
+**Answer:**
+```python
+def check_vowel(character):
+    vowels = "aeiouAEIOU"
+    if character in vowels:
+        return "Vowel"
+    else:
+        return "Consonant"
+
+# Example usage
+print(check_vowel('a'))  # Output: Vowel
+print(check_vowel('b'))  # Output: Consonant
+```
+
+---
+
+6. **Check if a Year is a Leap Year**
+**Question:** Write a program that checks if a given year is a leap year.
+
+**Answer:**
+```python
+def is_leap_year(year):
+    if (year % 4 == 0 and year % 100 != 0) or (year % 400 == 0):
+        return "Leap Year"
+    else:
+        return "Not a Leap Year"
+
+# Example usage
+print(is_leap_year(2020))  # Output: Leap Year
+print(is_leap_year(2021))  # Output: Not a Leap Year
+```
+
+---
+
+7. **Determine the Sign of a Number**
+**Question:** Write a program that checks if a number is positive, negative, or zero.
+
+**Answer:**
+```python
+def check_number(num):
+    if num > 0:
+        return "Positive"
+    elif num < 0:
+        return "Negative"
+    else:
+        return "Zero"
+
+# Example usage
+print(check_number(5))   # Output: Positive
+print(check_number(-3))  # Output: Negative
+print(check_number(0))   # Output: Zero
+```
+
+---
+
+8. **Day of the Week**
+**Question:** Write a program that prints the name of the day based on a number (1-7).
+
+**Answer:**
+```python
+def day_of_week(day):
+    if day == 1:
+        return "Monday"
+    elif day == 2:
+        return "Tuesday"
+    elif day == 3:
+        return "Wednesday"
+    elif day == 4:
+        return "Thursday"
+    elif day == 5:
+        return "Friday"
+    elif day == 6:
+        return "Saturday"
+    elif day == 7:
+        return "Sunday"
+    else:
+        return "Invalid day"
+
+# Example usage
+print(day_of_week(3))  # Output: Wednesday
+```
+
+---
+
+9. **Number Classification**
+**Question:** Write a program that classifies a number as "small" (1-10), "medium" (11-20), or "large" (21 and above).
+
+**Answer:**
+```python
+def classify_number(num):
+    if 1 <= num <= 10:
+        return "Small"
+    elif 11 <= num <= 20:
+        return "Medium"
+    else:
+        return "Large"
+
+# Example usage
+print(classify_number(5))   # Output: Small
+print(classify_number(15))  # Output: Medium
+print(classify_number(25))  # Output: Large
+```
+
+---
+
+10. **Grade Classification with Multiple Conditions**
+**Question:**  
+Enhance the grade classification program to include distinctions for plus and minus grades based on the exact score. For example:
+- 90-100: A
+  - 90-92: A-
+  - 93-96: A
+  - 97-100: A+
+- Similarly for other grades (B, C, D)
+
+**Solution:**
+```python
+def detailed_grade(marks):
+    if marks >= 90:
+        if marks <= 92:
+            return 'A-'
+        elif marks <= 96:
+            return 'A'
+        else:
+            return 'A+'
+    elif marks >= 80:
+        if marks <= 82:
+            return 'B-'
+        elif marks <= 86:
+            return 'B'
+        else:
+            return 'B+'
+    elif marks >= 70:
+        if marks <= 72:
+            return 'C-'
+        elif marks <= 76:
+            return 'C'
+        else:
+            return 'C+'
+    elif marks >= 60:
+        if marks <= 62:
+            return 'D-'
+        elif marks <= 66:
+            return 'D'
+        else:
+            return 'D+'
+    else:
+        return 'F'
+
+# Example Usage
+print(detailed_grade(91))  # Output: A-
+print(detailed_grade(95))  # Output: A
+print(detailed_grade(98))  # Output: A+
+print(detailed_grade(85))  # Output: B
+print(detailed_grade(73))  # Output: C-
+print(detailed_grade(65))  # Output: D
+print(detailed_grade(55))  # Output: F
+```
+
+---
+
+11. **Identify the Type of a Triangle Based on Angles**
+**Question:**  
+Write a Python program that takes three angles of a triangle as input and determines if the triangle is:
+- **Acute**: All angles are less than 90 degrees
+- **Right**: One angle is exactly 90 degrees
+- **Obtuse**: One angle is greater than 90 degrees
+- **Invalid**: If the angles do not sum up to 180 degrees
+
+**Solution:**
+```python
+def triangle_angle_type(angle1, angle2, angle3):
+    total = angle1 + angle2 + angle3
+    if total != 180:
+        return "Invalid Triangle"
+    if angle1 == 90 or angle2 == 90 or angle3 == 90:
+        return "Right Triangle"
+    elif angle1 > 90 or angle2 > 90 or angle3 > 90:
+        return "Obtuse Triangle"
+    else:
+        return "Acute Triangle"
+
+# Example Usage
+print(triangle_angle_type(60, 60, 60))  # Output: Acute Triangle
+print(triangle_angle_type(90, 45, 45))  # Output: Right Triangle
+print(triangle_angle_type(100, 40, 40)) # Output: Obtuse Triangle
+print(triangle_angle_type(50, 60, 80))  # Output: Invalid Triangle
+```
+
+---
+
+12. **Find the Second Largest Number in a List**
+**Question:**  
+Write a Python program to find the second largest number in a list of integers.
+
+**Solution:**
+```python
+def second_largest(numbers):
+    if len(numbers) < 2:
+        return "List does not have enough elements."
+    first, second = (numbers[0], float('-inf'))
+    for num in numbers[1:]:
+        if num > first:
+            second = first
+            first = num
+        elif num > second and num != first:
+            second = num
+    return second if second != float('-inf') else "No second largest element."
+
+# Example Usage
+print(second_largest([10, 20, 4, 45, 99]))  # Output: 45
+print(second_largest([10, 10, 10]))         # Output: No second largest element.
+print(second_largest([5]))                  # Output: List does not have enough elements.
+```
+
+---
+
+
 # While-and-For_Loops
 
 1. **Explain the difference between `for` and `while` loops in Python?**
@@ -287,6 +605,7 @@ for i in range(5):
 
 8. **What is the purpose of the enumerate() function in a for loop?**
    - The `enumerate()` function adds a counter to an iterable and returns it as an enumerate object, which can be used to obtain both the index and the value in a loop:
+
    ```python
    my_list = ['a', 'b', 'c']
    for index, value in enumerate(my_list):
