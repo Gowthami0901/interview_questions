@@ -158,7 +158,7 @@ if True or check():
 
 # Coding Questions
 
-1. **Check Divisibility by Multiple Numbers**
+### 1. **Check Divisibility by Multiple Numbers**
 
 **Question:**  
 Write a Python program that takes an integer as input and checks if it is divisible by both 3 and 5, only by 3, only by 5, or by neither.
@@ -184,7 +184,7 @@ print(check_divisibility(7))   # Output: Not divisible by 3 or 5
 
 ---
 
-2. **Simple Calculator**
+### 2. **Simple Calculator**
 
 **Question:**  
 Write a Python program that functions as a simple calculator. It should take two numbers and an operator (`+`, `-`, `*`, `/`) as input and perform the corresponding arithmetic operation.
@@ -215,7 +215,7 @@ print(simple_calculator(10, 5, '^'))  # Output: Invalid operator
 
 ---
 
-3. **Check for Prime Number**
+### 3. **Check for Prime Number**
 
 **Question:** Write a program that checks if a number is prime.
 
@@ -236,7 +236,7 @@ print(is_prime(30))  # Output: False
 
 ---
 
-4. **Check if a Number is Even or Odd**
+### 4. **Check if a Number is Even or Odd**
 
 **Question:** Write a program to determine if a number is even or odd.
 
@@ -255,7 +255,7 @@ print(check_even_odd(5))   # Output: Odd
 
 ---
 
-5. **Check for Vowel or Consonant**
+### 5. **Check for Vowel or Consonant**
 
 **Question:** Write a program that checks if a character is a vowel or consonant.
 
@@ -275,7 +275,7 @@ print(check_vowel('b'))  # Output: Consonant
 
 ---
 
-6. **Check if a Year is a Leap Year**
+### 6. **Check if a Year is a Leap Year**
 
 **Question:** Write a program that checks if a given year is a leap year.
 
@@ -294,7 +294,7 @@ print(is_leap_year(2021))  # Output: Not a Leap Year
 
 ---
 
-7. **Determine the Sign of a Number**
+### 7. **Determine the Sign of a Number**
 
 **Question:** Write a program that checks if a number is positive, negative, or zero.
 
@@ -316,7 +316,7 @@ print(check_number(0))   # Output: Zero
 
 ---
 
-8. **Day of the Week**
+### 8. **Day of the Week**
 
 **Question:** Write a program that prints the name of the day based on a number (1-7).
 
@@ -346,7 +346,7 @@ print(day_of_week(3))  # Output: Wednesday
 
 ---
 
-9. **Number Classification**
+### 9. **Number Classification**
 
 **Question:** Write a program that classifies a number as "small" (1-10), "medium" (11-20), or "large" (21 and above).
 
@@ -368,7 +368,7 @@ print(classify_number(25))  # Output: Large
 
 ---
 
-10. **Grade Classification with Multiple Conditions**
+### 10. **Grade Classification with Multiple Conditions**
 
 **Question:**  
 Enhance the grade classification program to include distinctions for plus and minus grades based on the exact score. For example:
@@ -424,7 +424,7 @@ print(detailed_grade(55))  # Output: F
 
 ---
 
-11. **Identify the Type of a Triangle Based on Angles**
+### 11. **Identify the Type of a Triangle Based on Angles**
 
 **Question:**  
 Write a Python program that takes three angles of a triangle as input and determines if the triangle is:
@@ -455,7 +455,7 @@ print(triangle_angle_type(50, 60, 80))  # Output: Invalid Triangle
 
 ---
 
-12. **Find the Second Largest Number in a List**
+### 12. **Find the Second Largest Number in a List**
 
 **Question:**  
 Write a Python program to find the second largest number in a list of integers.
@@ -643,6 +643,8 @@ def sum_natural_numbers(n):
 print(sum_natural_numbers(5))  # Output: 15
 ```
 
+---
+
 ### 2. Factorial of a Number
 **Question:** Write a program that computes the factorial of a number using a loop.
 
@@ -658,6 +660,8 @@ def factorial(n):
 print(factorial(5))  # Output: 120
 ```
 
+---
+
 ### 3. Fibonacci Sequence
 **Question:** Write a program to print the Fibonacci sequence up to `n` terms using a loop.
 
@@ -672,6 +676,8 @@ def fibonacci(n):
 # Example usage
 fibonacci(5)  # Output: 0 1 1 2 3
 ```
+
+---
 
 ### 4. Reverse a Number
 **Question:** Write a program that reverses a given integer using a loop.
@@ -690,6 +696,8 @@ def reverse_number(num):
 print(reverse_number(12345))  # Output: 54321
 ```
 
+---
+
 ### 5. Count Vowels in a String
 **Question:** Write a program that counts the number of vowels in a given string using a loop.
 
@@ -707,6 +715,8 @@ def count_vowels(string):
 print(count_vowels("Hello World"))  # Output: 3
 ```
 
+---
+
 ### 6. Multiplication Table
 **Question:** Write a program that prints the multiplication table of a given number using a loop.
 
@@ -719,6 +729,8 @@ def multiplication_table(n):
 # Example usage
 multiplication_table(5)
 ```
+
+---
 
 ### 7. Find Largest Element in a List
 **Question:** Write a program that finds the largest element in a list using a loop.
@@ -735,6 +747,8 @@ def find_largest(numbers):
 # Example usage
 print(find_largest([1, 3, 5, 7, 9]))  # Output: 9
 ```
+
+---
 
 ### 8. Print Prime Numbers within a Range
 **Question:** Write a program that prints all prime numbers between `1` and `n` using a loop.
@@ -758,6 +772,8 @@ def print_primes(n):
 print_primes(20)  # Output: 2 3 5 7 11 13 17 19
 ```
 
+---
+
 ### 9. Count Digits in a Number
 **Question:** Write a program that counts the number of digits in a given integer using a loop.
 
@@ -773,6 +789,8 @@ def count_digits(num):
 # Example usage
 print(count_digits(12345))  # Output: 5
 ```
+
+---
 
 ### 10. Remove Duplicates from a List
 **Question:** Write a program that removes duplicate elements from a list using a loop.
@@ -790,7 +808,7 @@ def remove_duplicates(numbers):
 print(remove_duplicates([1, 2, 2, 3, 4, 4, 5]))  # Output: [1, 2, 3, 4, 5]
 ```
 
-Here are additional interview questions that focus on **`while`** and **`for`** loops, along with example answers:
+---
 
 ### 11. Print a Pattern
 **Question:** Write a program to print a right-angled triangle pattern of stars based on the input number of rows.
@@ -813,6 +831,8 @@ print_triangle(5)
 *****
 ```
 
+---
+
 ### 12. Check Palindrome
 **Question:** Write a program to check if a given string is a palindrome using a loop.
 
@@ -830,6 +850,8 @@ print(is_palindrome("Radar"))  # Output: True
 print(is_palindrome("Hello"))  # Output: False
 ```
 
+---
+
 ### 13. Sum of Digits
 **Question:** Write a program that calculates the sum of the digits of a given integer using a loop.
 
@@ -846,6 +868,8 @@ def sum_of_digits(num):
 print(sum_of_digits(12345))  # Output: 15
 ```
 
+---
+
 ### 14. Generate a List of Squares
 **Question:** Write a program to generate a list of squares of numbers from `1` to `n` using a loop.
 
@@ -860,6 +884,8 @@ def generate_squares(n):
 # Example usage
 print(generate_squares(5))  # Output: [1, 4, 9, 16, 25]
 ```
+
+---
 
 ### 15. Count Consonants in a String
 **Question:** Write a program that counts the number of consonants in a given string using a loop.
@@ -878,6 +904,8 @@ def count_consonants(string):
 print(count_consonants("Hello World"))  # Output: 7
 ```
 
+---
+
 ### 16. Find GCD (Greatest Common Divisor)
 **Question:** Write a program that calculates the GCD of two numbers using a loop.
 
@@ -891,6 +919,8 @@ def gcd(a, b):
 # Example usage
 print(gcd(48, 18))  # Output: 6
 ```
+
+---
 
 ### 17. Check Armstrong Number
 **Question:** Write a program to check if a number is an Armstrong number using a loop.
@@ -912,6 +942,8 @@ print(is_armstrong(153))  # Output: True
 print(is_armstrong(123))  # Output: False
 ```
 
+---
+
 ### 18. Reverse a String
 **Question:** Write a program that reverses a given string using a loop.
 
@@ -926,6 +958,8 @@ def reverse_string(s):
 # Example usage
 print(reverse_string("Hello"))  # Output: "olleH"
 ```
+
+---
 
 ### 19. Calculate Exponential
 **Question:** Write a program that calculates `x` raised to the power of `n` using a loop.
@@ -942,6 +976,8 @@ def power(x, n):
 print(power(2, 3))  # Output: 8
 ```
 
+---
+
 ### 20. Print Odd Numbers in a Range
 **Question:** Write a program to print all odd numbers between `1` and `n` using a loop.
 
@@ -954,7 +990,8 @@ def print_odd_numbers(n):
 # Example usage
 print_odd_numbers(10)  # Output: 1 3 5 7 9
 ```
-
+---
+<br>
 
 
 # Break-Continue-Pass-Statements
@@ -1081,5 +1118,208 @@ result = search()
 6. **What is the difference between break and return statements in loops?**
    - The `break` statement exits the innermost loop, while the `return` statement exits the entire function and returns a value (if specified).
 
+---
+
+# Coding Questions
+
+Here are some commonly asked interview questions focusing on the **`break`**, **`continue`**, and **`pass`** statements in Python
+
+
+### 1. Use `break` to Exit a Loop
+**Question:** Write a program that prints numbers from `1` to `10`, but stops when it reaches `6` using the `break` statement.
+
+**Answer:**
+```python
+def print_numbers():
+    for i in range(1, 11):
+        if i == 6:
+            break
+        print(i)
+
+# Example usage
+print_numbers()  # Output: 1 2 3 4 5
+```
+
+---
+
+### 2. Use `continue` to Skip an Iteration
+**Question:** Write a program that prints even numbers from `1` to `10`, skipping the odd numbers using the `continue` statement.
+
+**Answer:**
+```python
+def print_even_numbers():
+    for i in range(1, 11):
+        if i % 2 != 0:
+            continue
+        print(i)
+
+# Example usage
+print_even_numbers()  # Output: 2 4 6 8 10
+```
+
+---
+
+### 3. Use `pass` in a Loop
+**Question:** Write a program that prints numbers from `1` to `10`. Use `pass` for the odd numbers and print a message for even numbers.
+
+**Answer:**
+```python
+def print_numbers_with_pass():
+    for i in range(1, 11):
+        if i % 2 != 0:
+            pass  # Do nothing for odd numbers
+        else:
+            print(f"{i} is even")
+
+# Example usage
+print_numbers_with_pass()  # Output: 2 is even, 4 is even, 6 is even, 8 is even, 10 is even
+```
+
+---
+
+### 4. Find First Prime Number
+**Question:** Write a program that finds and prints the first prime number greater than `10` and less than `50`, using `break`.
+
+**Answer:**
+```python
+def first_prime():
+    for num in range(11, 50):
+        for i in range(2, int(num**0.5) + 1):
+            if num % i == 0:
+                break
+        else:  # This else corresponds to the for loop, not the if statement
+            print(num)
+            break
+
+# Example usage
+first_prime()  # Output: 11
+```
+
+---
+
+### 5. Skip Specific Values
+**Question:** Write a program that prints numbers from `1` to `20`, but skips `5` and `10` using the `continue` statement.
+
+**Answer:**
+```python
+def skip_specific_values():
+    for i in range(1, 21):
+        if i == 5 or i == 10:
+            continue
+        print(i)
+
+# Example usage
+skip_specific_values()  # Output: 1 2 3 4 6 7 8 9 11 12 13 14 15 16 17 18 19 20
+```
+
+---
+
+### 6. Using `pass` for Future Implementation
+**Question:** Write a program that checks if a number is positive, negative, or zero. Use `pass` to handle the "zero" case for future implementation.
+
+**Answer:**
+```python
+def check_number(num):
+    if num > 0:
+        print("Positive")
+    elif num < 0:
+        print("Negative")
+    else:
+        pass  # Future implementation for zero case
+
+# Example usage
+check_number(0)  # No output, but can be implemented later
+```
+
+---
+
+
+### 7. Count Until a Condition
+**Question:** Write a program that counts numbers from `1` to `20`, but stops counting when it reaches `15` using the `break` statement.
+
+**Answer:**
+```python
+def count_until():
+    count = 0
+    for i in range(1, 21):
+        if i == 15:
+            break
+        count += 1
+    return count
+
+# Example usage
+print(count_until())  # Output: 14
+```
+
+---
+
+### 8. Use `continue` to Filter Values
+**Question:** Write a program that filters out and prints all numbers greater than `5` from a list of numbers using the `continue` statement.
+
+**Answer:**
+```python
+def filter_numbers(numbers):
+    for num in numbers:
+        if num <= 5:
+            continue
+        print(num)
+
+# Example usage
+filter_numbers([1, 3, 5, 7, 9, 2, 6])  # Output: 7 9 6
+```
+
+---
+
+### 9. Nested Loops with `break`
+**Question:** Write a program that finds the first odd number in a nested loop, where the outer loop goes from `1` to `5` and the inner loop goes from `1` to `10`.
+
+**Answer:**
+```python
+def find_first_odd():
+    for i in range(1, 6):
+        for j in range(1, 11):
+            if j % 2 != 0:
+                print(f"First odd number: {j}")
+                break
+        break  # Exiting the outer loop after the first odd number is found
+
+# Example usage
+find_first_odd()  # Output: First odd number: 1
+```
+
+---
+
+### 10. Counting Down
+**Question:** Write a program that counts down from `10` to `1`, using `break` to stop if it reaches `5`.
+
+**Answer:**
+```python
+def countdown():
+    for i in range(10, 0, -1):
+        if i == 5:
+            break
+        print(i)
+
+# Example usage
+countdown()  # Output: 10 9 8 7 6
+```
+
+---
+
+### 11. Skip Negative Numbers
+**Question:** Write a program that takes a list of numbers and prints only the positive numbers, using continue to skip the negatives.
+
+**Answer:**
+
+```python
+def print_positive_numbers(numbers):
+    for num in numbers:
+        if num < 0:
+            continue
+        print(num)
+
+# Example usage
+print_positive_numbers([-1, 2, -3, 4, -5, 6])  # Output: 2 4 6
+```
 
 
