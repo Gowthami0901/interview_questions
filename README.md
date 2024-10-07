@@ -1,8 +1,8 @@
 # **CONTROL FLOW**
 
-[If-Else Statements](#If-Else-Statements)
-[While and For Loops](#While-and-For_Loops)
-[Break Continue Pass Statements](#Break-Continue-Pass-Statements)
+- [If-Else Statements](#If-Else-Statements)
+- [While and For Loops](#While-and-For_Loops)
+- [Break Continue Pass Statements](#Break-Continue-Pass-Statements)
 
 # If-Else-Statements
 
@@ -156,7 +156,7 @@ if True or check():
 ---
 <br>
 
-# Coding Question
+# Coding Questions
 
 1. **Check Divisibility by Multiple Numbers**
 
@@ -623,6 +623,339 @@ for i in range(5):
 
 ---
 <br>
+
+# Coding Questions
+
+Here are some of the most commonly asked interview questions related to **`while`** and **`for`** loops:
+
+### 1. Sum of Natural Numbers
+**Question:** Write a program that calculates the sum of the first `n` natural numbers using a loop.
+
+**Answer:**
+```python
+def sum_natural_numbers(n):
+    total = 0
+    for i in range(1, n + 1):
+        total += i
+    return total
+
+# Example usage
+print(sum_natural_numbers(5))  # Output: 15
+```
+
+### 2. Factorial of a Number
+**Question:** Write a program that computes the factorial of a number using a loop.
+
+**Answer:**
+```python
+def factorial(n):
+    result = 1
+    for i in range(1, n + 1):
+        result *= i
+    return result
+
+# Example usage
+print(factorial(5))  # Output: 120
+```
+
+### 3. Fibonacci Sequence
+**Question:** Write a program to print the Fibonacci sequence up to `n` terms using a loop.
+
+**Answer:**
+```python
+def fibonacci(n):
+    a, b = 0, 1
+    for _ in range(n):
+        print(a, end=' ')
+        a, b = b, a + b
+
+# Example usage
+fibonacci(5)  # Output: 0 1 1 2 3
+```
+
+### 4. Reverse a Number
+**Question:** Write a program that reverses a given integer using a loop.
+
+**Answer:**
+```python
+def reverse_number(num):
+    reversed_num = 0
+    while num > 0:
+        digit = num % 10
+        reversed_num = reversed_num * 10 + digit
+        num //= 10
+    return reversed_num
+
+# Example usage
+print(reverse_number(12345))  # Output: 54321
+```
+
+### 5. Count Vowels in a String
+**Question:** Write a program that counts the number of vowels in a given string using a loop.
+
+**Answer:**
+```python
+def count_vowels(string):
+    vowels = "aeiouAEIOU"
+    count = 0
+    for char in string:
+        if char in vowels:
+            count += 1
+    return count
+
+# Example usage
+print(count_vowels("Hello World"))  # Output: 3
+```
+
+### 6. Multiplication Table
+**Question:** Write a program that prints the multiplication table of a given number using a loop.
+
+**Answer:**
+```python
+def multiplication_table(n):
+    for i in range(1, 11):
+        print(f"{n} x {i} = {n * i}")
+
+# Example usage
+multiplication_table(5)
+```
+
+### 7. Find Largest Element in a List
+**Question:** Write a program that finds the largest element in a list using a loop.
+
+**Answer:**
+```python
+def find_largest(numbers):
+    largest = numbers[0]
+    for num in numbers:
+        if num > largest:
+            largest = num
+    return largest
+
+# Example usage
+print(find_largest([1, 3, 5, 7, 9]))  # Output: 9
+```
+
+### 8. Print Prime Numbers within a Range
+**Question:** Write a program that prints all prime numbers between `1` and `n` using a loop.
+
+**Answer:**
+```python
+def is_prime(num):
+    if num < 2:
+        return False
+    for i in range(2, int(num**0.5) + 1):
+        if num % i == 0:
+            return False
+    return True
+
+def print_primes(n):
+    for num in range(1, n + 1):
+        if is_prime(num):
+            print(num, end=' ')
+
+# Example usage
+print_primes(20)  # Output: 2 3 5 7 11 13 17 19
+```
+
+### 9. Count Digits in a Number
+**Question:** Write a program that counts the number of digits in a given integer using a loop.
+
+**Answer:**
+```python
+def count_digits(num):
+    count = 0
+    while num > 0:
+        num //= 10
+        count += 1
+    return count
+
+# Example usage
+print(count_digits(12345))  # Output: 5
+```
+
+### 10. Remove Duplicates from a List
+**Question:** Write a program that removes duplicate elements from a list using a loop.
+
+**Answer:**
+```python
+def remove_duplicates(numbers):
+    unique_numbers = []
+    for num in numbers:
+        if num not in unique_numbers:
+            unique_numbers.append(num)
+    return unique_numbers
+
+# Example usage
+print(remove_duplicates([1, 2, 2, 3, 4, 4, 5]))  # Output: [1, 2, 3, 4, 5]
+```
+
+Here are additional interview questions that focus on **`while`** and **`for`** loops, along with example answers:
+
+### 11. Print a Pattern
+**Question:** Write a program to print a right-angled triangle pattern of stars based on the input number of rows.
+
+**Answer:**
+```python
+def print_triangle(rows):
+    for i in range(1, rows + 1):
+        print('*' * i)
+
+# Example usage
+print_triangle(5)
+```
+**Output:**
+```
+*
+**
+***
+****
+*****
+```
+
+### 12. Check Palindrome
+**Question:** Write a program to check if a given string is a palindrome using a loop.
+
+**Answer:**
+```python
+def is_palindrome(s):
+    s = s.lower()
+    reversed_s = ''
+    for char in s:
+        reversed_s = char + reversed_s
+    return s == reversed_s
+
+# Example usage
+print(is_palindrome("Radar"))  # Output: True
+print(is_palindrome("Hello"))  # Output: False
+```
+
+### 13. Sum of Digits
+**Question:** Write a program that calculates the sum of the digits of a given integer using a loop.
+
+**Answer:**
+```python
+def sum_of_digits(num):
+    total = 0
+    while num > 0:
+        total += num % 10
+        num //= 10
+    return total
+
+# Example usage
+print(sum_of_digits(12345))  # Output: 15
+```
+
+### 14. Generate a List of Squares
+**Question:** Write a program to generate a list of squares of numbers from `1` to `n` using a loop.
+
+**Answer:**
+```python
+def generate_squares(n):
+    squares = []
+    for i in range(1, n + 1):
+        squares.append(i ** 2)
+    return squares
+
+# Example usage
+print(generate_squares(5))  # Output: [1, 4, 9, 16, 25]
+```
+
+### 15. Count Consonants in a String
+**Question:** Write a program that counts the number of consonants in a given string using a loop.
+
+**Answer:**
+```python
+def count_consonants(string):
+    vowels = "aeiouAEIOU"
+    count = 0
+    for char in string:
+        if char.isalpha() and char not in vowels:
+            count += 1
+    return count
+
+# Example usage
+print(count_consonants("Hello World"))  # Output: 7
+```
+
+### 16. Find GCD (Greatest Common Divisor)
+**Question:** Write a program that calculates the GCD of two numbers using a loop.
+
+**Answer:**
+```python
+def gcd(a, b):
+    while b:
+        a, b = b, a % b
+    return a
+
+# Example usage
+print(gcd(48, 18))  # Output: 6
+```
+
+### 17. Check Armstrong Number
+**Question:** Write a program to check if a number is an Armstrong number using a loop.
+
+**Answer:**
+```python
+def is_armstrong(num):
+    total = 0
+    order = len(str(num))
+    temp = num
+    while temp > 0:
+        digit = temp % 10
+        total += digit ** order
+        temp //= 10
+    return total == num
+
+# Example usage
+print(is_armstrong(153))  # Output: True
+print(is_armstrong(123))  # Output: False
+```
+
+### 18. Reverse a String
+**Question:** Write a program that reverses a given string using a loop.
+
+**Answer:**
+```python
+def reverse_string(s):
+    reversed_s = ''
+    for char in s:
+        reversed_s = char + reversed_s
+    return reversed_s
+
+# Example usage
+print(reverse_string("Hello"))  # Output: "olleH"
+```
+
+### 19. Calculate Exponential
+**Question:** Write a program that calculates `x` raised to the power of `n` using a loop.
+
+**Answer:**
+```python
+def power(x, n):
+    result = 1
+    for _ in range(n):
+        result *= x
+    return result
+
+# Example usage
+print(power(2, 3))  # Output: 8
+```
+
+### 20. Print Odd Numbers in a Range
+**Question:** Write a program to print all odd numbers between `1` and `n` using a loop.
+
+**Answer:**
+```python
+def print_odd_numbers(n):
+    for i in range(1, n + 1, 2):
+        print(i, end=' ')
+
+# Example usage
+print_odd_numbers(10)  # Output: 1 3 5 7 9
+```
+
+
 
 # Break-Continue-Pass-Statements
 
