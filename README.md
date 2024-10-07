@@ -237,9 +237,10 @@ print(is_prime(30))  # Output: False
 ---
 
 4. **Check if a Number is Even or Odd**
+
 **Question:** Write a program to determine if a number is even or odd.
 
-**Answer:**
+**Solution:**
 ```python
 def check_even_odd(num):
     if num % 2 == 0:
@@ -255,9 +256,10 @@ print(check_even_odd(5))   # Output: Odd
 ---
 
 5. **Check for Vowel or Consonant**
+
 **Question:** Write a program that checks if a character is a vowel or consonant.
 
-**Answer:**
+**Solution:**
 ```python
 def check_vowel(character):
     vowels = "aeiouAEIOU"
@@ -274,9 +276,10 @@ print(check_vowel('b'))  # Output: Consonant
 ---
 
 6. **Check if a Year is a Leap Year**
+
 **Question:** Write a program that checks if a given year is a leap year.
 
-**Answer:**
+**Solution:**
 ```python
 def is_leap_year(year):
     if (year % 4 == 0 and year % 100 != 0) or (year % 400 == 0):
@@ -292,9 +295,10 @@ print(is_leap_year(2021))  # Output: Not a Leap Year
 ---
 
 7. **Determine the Sign of a Number**
+
 **Question:** Write a program that checks if a number is positive, negative, or zero.
 
-**Answer:**
+**Solution:**
 ```python
 def check_number(num):
     if num > 0:
@@ -313,9 +317,10 @@ print(check_number(0))   # Output: Zero
 ---
 
 8. **Day of the Week**
+
 **Question:** Write a program that prints the name of the day based on a number (1-7).
 
-**Answer:**
+**Solution:**
 ```python
 def day_of_week(day):
     if day == 1:
@@ -342,9 +347,10 @@ print(day_of_week(3))  # Output: Wednesday
 ---
 
 9. **Number Classification**
+
 **Question:** Write a program that classifies a number as "small" (1-10), "medium" (11-20), or "large" (21 and above).
 
-**Answer:**
+**Solution:**
 ```python
 def classify_number(num):
     if 1 <= num <= 10:
@@ -363,6 +369,7 @@ print(classify_number(25))  # Output: Large
 ---
 
 10. **Grade Classification with Multiple Conditions**
+
 **Question:**  
 Enhance the grade classification program to include distinctions for plus and minus grades based on the exact score. For example:
 - 90-100: A
@@ -418,6 +425,7 @@ print(detailed_grade(55))  # Output: F
 ---
 
 11. **Identify the Type of a Triangle Based on Angles**
+
 **Question:**  
 Write a Python program that takes three angles of a triangle as input and determines if the triangle is:
 - **Acute**: All angles are less than 90 degrees
@@ -448,6 +456,7 @@ print(triangle_angle_type(50, 60, 80))  # Output: Invalid Triangle
 ---
 
 12. **Find the Second Largest Number in a List**
+
 **Question:**  
 Write a Python program to find the second largest number in a list of integers.
 
